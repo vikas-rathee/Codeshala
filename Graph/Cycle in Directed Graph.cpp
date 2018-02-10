@@ -1,4 +1,3 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -37,11 +36,11 @@ int main()
             cin >> a >> b;
             v[a].push_back(b);
     }
-    //for(int i =1; i <= nodes; i++)
-    //{
-     //   if(!isVisited[i])
-       //     dfs(i, 0);
-    //}
+    for(int i = 1; i <= nodes; i++)
+        {
+            dfs(i,0);
+            isVisited[i] = false;
+        
 
     if(ans)
         cout << "YES";
