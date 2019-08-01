@@ -7,11 +7,11 @@ bool isVisited[10005] = {false};
 void bfs()
 {
     q.push(1);
+    isVisited[1] =1;
     while(!q.empty())
     {
         int node = q.front();
         cout << node << " ";
-        isVisited[node] =1;
         q.pop();
         for(int i =0; i < v[node].size(); i++)
         {
