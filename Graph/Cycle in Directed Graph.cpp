@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// Back edge i.e. check if from the current node there is an edge to any of its ancestors.
 bool isVisited[1000] ={false}, ans = false;
 vector <vector<int> > v(1000);
 
